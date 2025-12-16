@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multipart Upload Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 500px; }
+    #progressText { margin-top: 10px; font-size: 14px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Video Upload (Multipart)</h2>
+
+  <input type="file" id="fileInput" accept="video/*"><br><br>
+
+  <progress id="progressBar" max="100" value="0" style="width:100%;"></progress>
+  <div id="progressText">Waiting for upload...</div><br>
+
+  <button id="uploadBtn">Upload</button>
+
+  <pre id="resultBox"></pre>
+</div>
+
+<script src="multipart-upload.js"></script> <!-- JS included -->
+<script>
+  const progressBar = document.getElementById("progressBar");
+  const progressText = document.getElementById("progressText");
+  const resultBox = document.getElementById("resultBox");
+
+  
+</script>
+
+</body>
+</html>
